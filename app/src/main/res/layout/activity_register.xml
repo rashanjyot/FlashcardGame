@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:fitsSystemWindows="true"
+    android:padding="15dp">
+
+
+<include layout="@layout/content_register" />
+
+<android.support.v7.widget.AppCompatButton
+    android:id="@+id/registerButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/colorPrimary"
+    android:text="Register"
+    android:textColor="#FFFFFF">
+
+</android.support.v7.widget.AppCompatButton>
+
+<ProgressBar
+    android:id="@+id/rpro"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|bottom"
+    android:visibility="gone" />
+
+</android.support.design.widget.CoordinatorLayout>
