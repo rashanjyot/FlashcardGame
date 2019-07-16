@@ -4,9 +4,12 @@ The app supports gameplay regardless of whether the user has signed in or not. T
 IMPORTANT NOTE:   
 
 On successful sign in, user is prompted whether to sync data FROM or TO to the email. Both have been described below:
-1. Sync Data <b>FROM</b> email- This will fetch the user's progress from the cloudDB and overwrite user's progress in localDB. For instance, a user logs in from device A and achieves a score of 3 in Level 1. Later, he logs in from device B and continues the game to reach a score of 5. Now, he again logs in from device A, (which until now had a score of 3) and wishes to sync progress to his device. In this case he may choose the FROM option. 
+1. Sync Data <b>FROM</b> email- This will fetch the user's progress from the cloudDB and overwrite user's progress in localDB. For instance, a user logs in from device A and achieves a score of 3 in Level 1. Later, he logs in from device B and continues the game to reach a score of 5. Now, he again logs in from device A, (who until now had a score of 3) and wishes to sync progress to his device. In this case he may choose the FROM option. 
 
 2. Sync Data <b>TO</b> email- This will fetch the user's progress from the localDB and overwrite user's progress in cloudDB. For instance, a user chooses to play as guest initially in a device and scores a whopping 8. He may now wish to sign in and also assign this progress to his account. In this case, he may choose the TO option.
+
+
+Also, the apk may not run on an intel x86 emulator or device, as mongo SDK is compatible with only ARM devices. Therefore, it is recommended that you test the app on a physical device since most of them have ARM architecture.
 <br>
 <br>
 <br>
@@ -35,6 +38,7 @@ As shown in the image, numbers depict the following:
 1. Question status - [New] - [Learning, Reviewing, Checking] - [Revision]
 2. Question Area
 3. Answer Area (Types - radio buttons/checkboxes/text-input)
+4. Submit Answer and Proceed
 
 <br>
 <br>
@@ -63,7 +67,7 @@ Sign in from nav bar
 <br>
 <img src="app/img14.jpg">
 On successful sign in, user is prompted whether to sync data FROM or TO to the email. Both have been described below:
-1. Sync Data <b>FROM</b> email- This will fetch the user's progress from the cloudDB and overwrite user's progress in localDB. For instance, a user logs in from device A and achieves a score of 3 in Level 1. Later, he logs in from device B and continues the game to reach a score of 5. Now, he again logs in from device A, (which until now had a score of 3) and wishes to sync progress to his device. In this case he may choose the FROM option. 
+1. Sync Data <b>FROM</b> email- This will fetch the user's progress from the cloudDB and overwrite user's progress in localDB. For instance, a user logs in from device A and achieves a score of 3 in Level 1. Later, he logs in from device B and continues the game to reach a score of 5. Now, he again logs in from device A, (who until now had a score of 3) and wishes to sync progress to his device. In this case he may choose the FROM option. 
 
 2. Sync Data <b>TO</b> email- This will fetch the user's progress from the localDB and overwrite user's progress in cloudDB. For instance, a user chooses to play as guest initially in a device and scores a whopping 8. He may now wish to sign in and also assign this progress to his account. In this case, he may choose the TO option.
 
